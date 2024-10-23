@@ -1,0 +1,92 @@
+header{
+  text-align: center; padding: 20px; color: #000;
+}
+header a, footer a { color: #000; /* Sets the text color of all links to white */ padding: 10px; /* Adds padding around the links */ text-decoration: none; /* Removes the underline from the links */ }
+header a.active, footer a.active { color: red; /* Changes the text color of active links to red */ }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer{
+  text-align: center; padding: 20px; color: #000;
+}
+
+/* Contact */
+.container {
+	width: 950px;
+	margin: 80px auto;
+	color: #000;
+	line-height: 1.5;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	margin-top: 40px;
+}
+
+.icon {
+	background-color: #000;
+	border-radius: 30px;
+	padding: 15px;
+	vertical-align: top;
+}
+
+.contact-info {
+	display: inline-block;
+	padding: 4px 20px 0px 20px;
+}
+
+.address-line {
+	margin-top: 40px;
+}
+
+.col-1 {
+	width: 530px;
+}
+
+.col-2 {
+	flex: 1 1 auto;
+	background-color: #000;
+}
+.contact-info-title {
+	color: #01bdd4;
+}
+
+@media all and (max-width: 1024px) {
+	.container {
+		width: auto;
+		padding: 30px;
+	}
+	 .col-1 {
+		width: 360px;
+	} 
+}
+
+@media all and (max-width: 700px) {
+	.content {
+		display: block;
+	}
+	.col-2 {
+		margin-top: 40px;
+	} 
+	.col-1{
+	width:100%;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.container {
+		padding: 10px;
+	}
+}
